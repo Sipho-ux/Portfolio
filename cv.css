@@ -1,0 +1,134 @@
+/* General Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url('colours.jpg') no-repeat center center/cover;
+    margin: 0;
+}
+
+/* Glass Overlay Styling */
+.glass-overlay {
+    position: absolute;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    top: 5%;
+    left: 50%;
+    height: 800px;
+    width: 95%; /* Adjusted for better width */
+    transform: translate(-50%);
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Glass blur effect */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Text Overlay Styling */
+.image-container .text-overlay {
+    position: relative;
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+
+}
+
+/* Top Area Styling */
+.top-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px; /* Added padding for better alignment */
+}
+
+/* Navigation Bar */
+.tab nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(236, 226, 216); /* Highlight color */
+}
+
+/* CV Section */
+.CV {
+    display: flex;
+    padding-top:20px ;
+    padding-left: 90px;
+    justify-content: space-between;
+    padding:0 200px;
+}
+
+
+.education {
+    margin-bottom: 20px;
+    padding-left: 50px;
+    margin-left: 100px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.skills{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.volunteer{
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 650px;
+    padding-bottom: 70px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.papercv a{
+    margin-inline: 30%;
+    padding-left: 200px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: rgba(236, 226, 216, 1);
+}
+
+.papercv a:hover{
+    color: rgba(138, 29, 8, 1) ;
+}
+
+hr{
+    border: none;
+    border-top:2px solid rgba(138, 29, 8, 1) ;
+    margin: 70px;
+  }
+    
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .glass-overlay {
+        width: 90%;
+        height: auto;
+    }
+
+    .top-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tab nav {
+        padding-left: 0;
+        gap: 10px;
+    }
+
+    .CV {
+        padding-left: 70px;
+    }
+}
+
